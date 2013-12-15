@@ -25,6 +25,8 @@ int main(int argc, char** argv) {
 }
 ```
 
+![mysum1](lab02_1.png)
+
 故继续挑战选做内容。选做是将int变化成float。最开始我按float去编写，但总是无法完成。通过看返汇编结果发现每次压入栈中的浮点数全部都是8字节的，查看保存浮点数的堆可以发现之中保存的全部是double型。为了验证这一点，使用标准库stdarg.h做一个简单的float版mysum，编译时的提示信息验证了我的猜想：
 
 ```
@@ -62,6 +64,8 @@ int main(int argc, char** argv) {
     return 0;
 }
 ```
+
+![mysum2](lab02_2.png)
 
 ###思考题
 
